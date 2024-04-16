@@ -15,17 +15,7 @@ class FlutterOverlayWindow {
   static const BasicMessageChannel _overlayMessageChannel =
       BasicMessageChannel("x-slayer/overlay_messenger", JSONMessageCodec());
 
-  /// Open overLay content
-  ///
-  /// - Optional arguments:
-  /// `height` the overlay height and default is [WindowSize.fullCover]
-  /// `width` the overlay width and default is [WindowSize.matchParent]
-  /// `alignment` the alignment postion on screen and default is [OverlayAlignment.center]
-  /// `visibilitySecret` the detail displayed in notifications on the lock screen and default is [NotificationVisibility.visibilitySecret]
-  /// `OverlayFlag` the overlay flag and default is [OverlayFlag.defaultFlag]
-  /// `overlayTitle` the notification message and default is "overlay activated"
-  /// `overlayContent` the notification message
-  /// `enableDrag` to enable/disable dragging the overlay over the screen and default is "false"
+
   /// `positionGravity` the overlay postion after drag and default is [PositionGravity.none]
   static Future<void> showOverlay({
     int height = WindowSize.fullCover,
